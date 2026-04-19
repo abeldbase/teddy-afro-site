@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 
 export default function TeddyAfroEtorikaSite() {
   const languages = {
@@ -20,14 +20,14 @@ export default function TeddyAfroEtorikaSite() {
       ctaSecondary: "ወደ YouTube ይሂዱ",
       overviewTitle: "አልበሙ ስለምንድን ነው?",
       overviewText:
-        "ይህ ገጽ ኢቶሪካን በአማርኛ፣ ኦሮምኛ፣ ትግርኛ፣ ሶማሊኛ እና አፋርኛ ለማቅረብ ተሰርቷል። የመልዕክቱ መሃል ሙዚቃ፣ ባህል፣ ፍቅር፣ መንፈሳዊነት እና ኢትዮጵያዊ መንነት ናቸው።",
+        "ይህ ገጽ ኢቶሪካን በአማርኛ፣ ኦሮምኛ፣ ትግርኛ፣ ሶማሊኛ፣ አፋርኛ እና ኑዌር ለማቅረብ ተሰርቷል። የመልዕክቱ መሃል ሙዚቃ፣ ባህል፣ ፍቅር፣ መንፈሳዊነት እና ኢትዮጵያዊ መንነት ናቸው።",
       storyTitle: "የአልበሙ ታሪክ",
       storyText:
         "ኢቶሪካ በሙዚቃ ብቻ የማይቆም ስራ ሆኖ ይታያል። ይህ የአድናቂዎች ገጽ አልበሙን እንደ ባህላዊ ድምጽ፣ እንደ መንፈሳዊ ጉዞ እና እንደ ኢትዮጵያ ብርሃን ለማቅረብ ተዘጋጅቷል።",
       themeTitle: "ዋና ጭብጦች",
       themes: ["ሙዚቃ እና ባህል", "ፍቅር እና ሕዝባዊ ትውስታ", "መንፈሳዊነት", "ኢትዮጵያዊ መንነት"],
       statTitle: "ፈጣን እይታ",
-      stats: ["ባለ 5 ቋንቋ ገጽ", "የኦንላይን ፎቶ ማዕከል", "የYouTube አገናኞች", "የአገር ደረጃ ክፍል"],
+      stats: ["ባለ 6 ቋንቋ ገጽ", "የኦንላይን ፎቶ ማዕከል", "የYouTube አገናኞች", "የአገር ደረጃ ክፍል"],
       songsTitle: "የአልበሙ አድናቂ ምርጫ",
       rankingsTitle: "በአገር የታዩ ከፍተኛ ደረጃዎች",
       country: "አገር",
@@ -43,20 +43,29 @@ export default function TeddyAfroEtorikaSite() {
     om: {
       name: "Afaan Oromoo",
       dir: "ltr",
-      nav: { story: "Seenaa albamii", songs: "Sirboota", rankings: "Sadarkaa biyyoota", gallery: "Kuusaa suuraa", fans: "Yaada deeggartootaa" },
+      nav: {
+        story: "Seenaa albamii",
+        songs: "Sirboota",
+        rankings: "Sadarkaa biyyoota",
+        gallery: "Kuusaa suuraa",
+        fans: "Yaada deeggartootaa",
+      },
       heroBadge: "Albeemii Haaraa",
       title: "Etorika",
-      subtitle: "Fuula deeggertootaa afaanota hedduun qophaa'e waa'ee albeemii haaraa Teddy Afro.",
+      subtitle:
+        "Fuula deeggertootaa afaanota hedduun qophaa'e waa'ee albeemii haaraa Teddy Afro.",
       ctaPrimary: "Sirboota ilaali",
       ctaSecondary: "Gara YouTube deemi",
       overviewTitle: "Albeemiin kun maal ibsa?",
-      overviewText: "Fuulni kun Etorika afaan shan keessatti akka dhiyaatu taasifameera. Ergaan isaa muuziqaa, aadaa, jaalala, amantii fi eenyummaa Itoophiyaa calaqqisiisa.",
+      overviewText:
+        "Fuulni kun Etorika afaan jahaan akka dhiyaatu taasifameera. Ergaan isaa muuziqaa, aadaa, jaalala, amantii fi eenyummaa Itoophiyaa calaqqisiisa.",
       storyTitle: "Seenaa albamii",
-      storyText: "Etorika hojii muuziqaa qofa osoo hin taane, yaada fi eenyummaa guddaa ibsu fakkaata. Fuulni kun albamicha akka sagalee aadaa fi imala keessaatti dhiheessa.",
+      storyText:
+        "Etorika hojii muuziqaa qofa osoo hin taane, yaada fi eenyummaa guddaa ibsu fakkaata. Fuulni kun albamicha akka sagalee aadaa fi imala keessaatti dhiheessa.",
       themeTitle: "Mata dureewwan ijoo",
       themes: ["Muuziqaa fi aadaa", "Jaalala fi yaadannoo uummataa", "Ruuxaanummaa", "Eenyummaa Itoophiyaa"],
       statTitle: "Ilaalcha saffisaa",
-      stats: ["Fuula afaan 5", "Suuraawwan onlaayinii", "Liinkii YouTube", "Kutaa sadarkaa biyyootaa"],
+      stats: ["Fuula afaan 6", "Suuraawwan onlaayinii", "Liinkii YouTube", "Kutaa sadarkaa biyyootaa"],
       songsTitle: "Filannoo deeggertootaa",
       rankingsTitle: "Sadarkaa biyyootaa keessatti mul'atan",
       country: "Biyya",
@@ -72,20 +81,29 @@ export default function TeddyAfroEtorikaSite() {
     ti: {
       name: "ትግርኛ",
       dir: "ltr",
-      nav: { story: "ታሪኽ ኣልበም", songs: "ደርፍታት", rankings: "ደረጃ ሃገራት", gallery: "ማእከል ስእሊ", fans: "ርእይቶ ኣድናቒት" },
+      nav: {
+        story: "ታሪኽ ኣልበም",
+        songs: "ደርፍታት",
+        rankings: "ደረጃ ሃገራት",
+        gallery: "ማእከል ስእሊ",
+        fans: "ርእይቶ ኣድናቒት",
+      },
       heroBadge: "ሓድሽ ኣልበም",
       title: "ኢቶሪካ",
-      subtitle: "ብብዙሕ ቋንቋታት ዝተዳለወ ገጽ ንሓድሽ ኣልበም ተዲ ኣፍሮ።",
+      subtitle:
+        "ብብዙሕ ቋንቋታት ዝተዳለወ ገጽ ንሓድሽ ኣልበም ተዲ ኣፍሮ።",
       ctaPrimary: "ደርፍታት ርአ",
       ctaSecondary: "ናብ YouTube ኪድ",
       overviewTitle: "እዚ ኣልበም እንታይ ይብል?",
-      overviewText: "እዚ ገጽ ኢቶሪካ ብኣማርኛ፣ ኦሮምኛ፣ ትግርኛ፣ ሶማሊኛን ኣፋርኛን ንምቕራብ ተሰሪሑ። ማእከሉ ሙዚቃ፣ ባህሊ፣ ፍቕሪ፣ መንፈሳዊነትን ኢትዮጵያዊ መንነትን እዩ።",
+      overviewText:
+        "እዚ ገጽ ኢቶሪካ ብኣማርኛ፣ ኦሮምኛ፣ ትግርኛ፣ ሶማሊኛ፣ ኣፋርኛን ኑዌርን ንምቕራብ ተሰሪሑ። ማእከሉ ሙዚቃ፣ ባህሊ፣ ፍቕሪ፣ መንፈሳዊነትን ኢትዮጵያዊ መንነትን እዩ።",
       storyTitle: "ታሪኽ ኣልበም",
-      storyText: "ኢቶሪካ ከም ሙዚቃዊ ስራሕ ጥራይ ዘይኮነ ከም መልእኽቲ እውን ይቕረብ። እዚ ገጽ ነቲ ኣልበም ከም ባህላዊ ድምጺን መንፈሳዊ ጉዕዞን ይርእዮ።",
+      storyText:
+        "ኢቶሪካ ከም ሙዚቃዊ ስራሕ ጥራይ ዘይኮነ ከም መልእኽቲ እውን ይቕረብ። እዚ ገጽ ነቲ ኣልበም ከም ባህላዊ ድምጺን መንፈሳዊ ጉዕዞን ይርእዮ።",
       themeTitle: "ቀንዲ ጭብጥታት",
       themes: ["ሙዚቃን ባህልን", "ፍቕርን ህዝባዊ ትዝታን", "መንፈሳዊነት", "ኢትዮጵያዊ መንነት"],
       statTitle: "ቅልጡፍ ሓበሬታ",
-      stats: ["5 ቋንቋታት", "ኦንላይን ስእልታት", "ሊንክታት YouTube", "ክፍሊ ደረጃ ሃገራት"],
+      stats: ["6 ቋንቋታት", "ኦንላይን ስእልታት", "ሊንክታት YouTube", "ክፍሊ ደረጃ ሃገራት"],
       songsTitle: "ምርጫ ኣድናቒት",
       rankingsTitle: "ኣብ ሃገራት ዝተርኣዩ ደረጃታት",
       country: "ሃገር",
@@ -101,20 +119,29 @@ export default function TeddyAfroEtorikaSite() {
     so: {
       name: "Soomaali",
       dir: "ltr",
-      nav: { story: "Sheekada albumka", songs: "Heesaha", rankings: "Kala sarreynta dalalka", gallery: "Sawirrada", fans: "Fikradaha taageerayaasha" },
+      nav: {
+        story: "Sheekada albumka",
+        songs: "Heesaha",
+        rankings: "Kala sarreynta dalalka",
+        gallery: "Sawirrada",
+        fans: "Fikradaha taageerayaasha",
+      },
       heroBadge: "Album Cusub",
       title: "Etorika",
-      subtitle: "Bog taageerayaal oo luqado badan leh oo ku saabsan albumka cusub ee Teddy Afro.",
+      subtitle:
+        "Bog taageerayaal oo luqado badan leh oo ku saabsan albumka cusub ee Teddy Afro.",
       ctaPrimary: "Daawo heesaha",
       ctaSecondary: "Tag YouTube",
       overviewTitle: "Albumkan muxuu xanbaarsan yahay?",
-      overviewText: "Boggan waxaa loo dhisay in Etorika lagu soo bandhigo shan luqadood. Fariintiisu waxay ku wareegsan tahay muusig, dhaqan, jacayl, ruuxaani iyo aqoonsiga Itoobiya.",
+      overviewText:
+        "Boggan waxaa loo dhisay in Etorika lagu soo bandhigo lix luqadood. Fariintiisu waxay ku wareegsan tahay muusig, dhaqan, jacayl, ruuxaani iyo aqoonsiga Itoobiya.",
       storyTitle: "Sheekada albumka",
-      storyText: "Etorika waxa loo arki karaa shaqo ka badan muusig keliya. Boggan waxa uu albumka u soo bandhigayaa sidii cod dhaqan iyo safar ruuxaani ah.",
+      storyText:
+        "Etorika waxa loo arki karaa shaqo ka badan muusig keliya. Boggan waxa uu albumka u soo bandhigayaa sidii cod dhaqan iyo safar ruuxaani ah.",
       themeTitle: "Mowduucyada waaweyn",
       themes: ["Muusig iyo dhaqan", "Jacayl iyo xusuus dadweyne", "Ruuxaani", "Aqoonsiga Itoobiya"],
       statTitle: "Aragti degdeg ah",
-      stats: ["Bog 5 luqadood leh", "Sawirro online ah", "Xiriirro YouTube", "Qaybta kala sarreynta dalalka"],
+      stats: ["Bog 6 luqadood leh", "Sawirro online ah", "Xiriirro YouTube", "Qaybta kala sarreynta dalalka"],
       songsTitle: "Xulashada taageerayaasha",
       rankingsTitle: "Heerarka lagu arkay dalalka",
       country: "Dal",
@@ -130,20 +157,29 @@ export default function TeddyAfroEtorikaSite() {
     aa: {
       name: "Qafaraf",
       dir: "ltr",
-      nav: { story: "Albam seena", songs: "Sirbo", rankings: "Biyya daraja", gallery: "Sawira", fans: "Fan fikra" },
+      nav: {
+        story: "Albam seena",
+        songs: "Sirbo",
+        rankings: "Biyya daraja",
+        gallery: "Sawira",
+        fans: "Fan fikra",
+      },
       heroBadge: "Qusba Albam",
       title: "Etorika",
-      subtitle: "Teddy Afro qusba albamih baxxaqqa shan afat yan marih fan website.",
+      subtitle:
+        "Teddy Afro qusba albamih baxxaqqa shan afat yan marih fan website.",
       ctaPrimary: "Sirbo luk",
       ctaSecondary: "YouTube fan gex",
       overviewTitle: "Albam maxco takkeh?",
-      overviewText: "Tama page Etorika Amharic, Afaan Oromoo, Tigrinya, Somali kee Qafaraf kinnim fan qembise. Fariisiyyi muusik, aada, jacayl, ruuxaaniyya kee Itoobiya kinnim yan gexxa.",
+      overviewText:
+        "Tama page Etorika Amharic, Afaan Oromoo, Tigrinya, Somali, Qafaraf kee Nuer kinnim fan qembise. Fariisiyyi muusik, aada, jacayl, ruuxaaniyya kee Itoobiya kinnim yan gexxa.",
       storyTitle: "Albam seena",
-      storyText: "Etorika muusik qiddo qofa hinna. Tama page albam aada codii kee ruuxaani safar akkaleh takke wayta baxsa.",
+      storyText:
+        "Etorika muusik qiddo qofa hinna. Tama page albam aada codii kee ruuxaani safar akkaleh takke wayta baxsa.",
       themeTitle: "Qunxa mawduuc",
       themes: ["Muusik kee aada", "Jacayl kee xusoo", "Ruuxaaniyya", "Itoophiyaa eenummâ"],
       statTitle: "Qusba malak",
-      stats: ["5 af page", "Online sawira", "YouTube links", "Biyya daraja qaybta"],
+      stats: ["6 af page", "Online sawira", "YouTube links", "Biyya daraja qaybta"],
       songsTitle: "Fan dooritah",
       rankingsTitle: "Biyyol addat yali daraja",
       country: "Biyya",
@@ -155,6 +191,44 @@ export default function TeddyAfroEtorikaSite() {
       listen: "Luk",
       langLabel: "Afa",
       footer: "Fanootah fan takkeh tijaabo website",
+    },
+    nu: {
+      name: "Nuer",
+      dir: "ltr",
+      nav: {
+        story: "Album story",
+        songs: "Songs",
+        rankings: "Country rankings",
+        gallery: "Gallery",
+        fans: "Fan comments",
+      },
+      heroBadge: "New Album",
+      title: "Etorika",
+      subtitle:
+        "A multilingual fan page about Teddy Afro's new album.",
+      ctaPrimary: "View songs",
+      ctaSecondary: "Go to YouTube",
+      overviewTitle: "What is this album about?",
+      overviewText:
+        "This page presents Etorika in multiple languages, including Nuer. It highlights music, culture, love, spirituality, and Ethiopian identity.",
+      storyTitle: "Album story",
+      storyText:
+        "Etorika feels bigger than music alone. This page presents the album as culture, message, and spiritual journey.",
+      themeTitle: "Main themes",
+      themes: ["Music and culture", "Love and memory", "Spirituality", "Ethiopian identity"],
+      statTitle: "Quick view",
+      stats: ["6 language page", "Online photo gallery", "YouTube links", "Country rankings section"],
+      songsTitle: "Fan picks",
+      rankingsTitle: "Top country rankings",
+      country: "Country",
+      song: "Song",
+      peak: "Peak rank",
+      notes: "Notes",
+      galleryTitle: "Gallery",
+      fansTitle: "Fan comments",
+      listen: "Watch",
+      langLabel: "Language",
+      footer: "Fan-made test website",
     },
   };
 
@@ -200,7 +274,7 @@ export default function TeddyAfroEtorikaSite() {
     []
   );
 
-  const rankingRows = [
+  const defaultRankingRows = [
     ["UAE", "ዳስ ጣል (አንሳው)", "#1", "Peak chart position"],
     ["Saudi Arabia", "ዳስ ጣል (አንሳው)", "#1", "Peak chart position"],
     ["Lebanon", "መሬማ", "#2", "Strong regional peak"],
@@ -248,28 +322,76 @@ export default function TeddyAfroEtorikaSite() {
       "Qafar, cod kee sawir fan Itoobiya baxsa.",
       "Shan afat qembisamuk baaxo cakkik.",
     ],
+    nu: [
+      "This album feels like more than music.",
+      "It carries culture, spirit, and memory.",
+      "Adding Nuer makes the page more inclusive.",
+    ],
   };
 
   const [lang, setLang] = useState("am");
+  const [rankingRows, setRankingRows] = useState(defaultRankingRows);
   const t = languages[lang];
 
+  useEffect(() => {
+    const loadRankings = async () => {
+      try {
+        const response = await fetch("/teddy-afro-site/rankings.json", {
+          cache: "no-store",
+        });
+        if (!response.ok) return;
+        const data = await response.json();
+        if (Array.isArray(data) && data.length > 0) {
+          setRankingRows(data);
+        }
+      } catch (error) {
+        console.log("Using default ranking data.");
+      }
+    };
+
+    loadRankings();
+  }, []);
+
   return (
-    <div style={{ minHeight: "100vh", background: "#0a0a0a", color: "#fff", fontFamily: "Arial, sans-serif" }} dir={t.dir}>
+    <div
+      style={{
+        minHeight: "100vh",
+        background: "#0a0a0a",
+        color: "#fff",
+        fontFamily: "Arial, sans-serif",
+      }}
+      dir={t.dir}
+    >
       <div style={{ position: "relative", overflow: "hidden" }}>
         <img
           src="https://img.youtube.com/vi/ADc9JPeLYi4/maxresdefault.jpg"
           alt="Teddy Afro album visual"
-          style={{ position: "absolute", inset: 0, width: "100%", height: "100%", objectFit: "cover", opacity: 0.28 }}
+          style={{
+            position: "absolute",
+            inset: 0,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            opacity: 0.28,
+          }}
         />
         <div
           style={{
             position: "absolute",
             inset: 0,
-            background: "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8), #0a0a0a)",
+            background:
+              "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8), #0a0a0a)",
           }}
         />
 
-        <header style={{ position: "relative", maxWidth: "1200px", margin: "0 auto", padding: "24px 16px" }}>
+        <header
+          style={{
+            position: "relative",
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "24px 16px",
+          }}
+        >
           <div
             style={{
               display: "flex",
@@ -284,19 +406,45 @@ export default function TeddyAfroEtorikaSite() {
             }}
           >
             <div>
-              <p style={{ margin: 0, fontSize: "12px", letterSpacing: "0.3em", color: "#f4c542", textTransform: "uppercase" }}>
+              <p
+                style={{
+                  margin: 0,
+                  fontSize: "12px",
+                  letterSpacing: "0.3em",
+                  color: "#f4c542",
+                  textTransform: "uppercase",
+                }}
+              >
                 Teddy Afro
               </p>
               <h1 style={{ margin: "10px 0 0", fontSize: "32px" }}>{t.title}</h1>
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-              <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", fontSize: "14px", color: "rgba(255,255,255,0.8)" }}>
-                <a href="#story" style={{ color: "inherit", textDecoration: "none" }}>{t.nav.story}</a>
-                <a href="#songs" style={{ color: "inherit", textDecoration: "none" }}>{t.nav.songs}</a>
-                <a href="#rankings" style={{ color: "inherit", textDecoration: "none" }}>{t.nav.rankings}</a>
-                <a href="#gallery" style={{ color: "inherit", textDecoration: "none" }}>{t.nav.gallery}</a>
-                <a href="#fans" style={{ color: "inherit", textDecoration: "none" }}>{t.nav.fans}</a>
+              <div
+                style={{
+                  display: "flex",
+                  flexWrap: "wrap",
+                  gap: "12px",
+                  fontSize: "14px",
+                  color: "rgba(255,255,255,0.8)",
+                }}
+              >
+                <a href="#story" style={{ color: "inherit", textDecoration: "none" }}>
+                  {t.nav.story}
+                </a>
+                <a href="#songs" style={{ color: "inherit", textDecoration: "none" }}>
+                  {t.nav.songs}
+                </a>
+                <a href="#rankings" style={{ color: "inherit", textDecoration: "none" }}>
+                  {t.nav.rankings}
+                </a>
+                <a href="#gallery" style={{ color: "inherit", textDecoration: "none" }}>
+                  {t.nav.gallery}
+                </a>
+                <a href="#fans" style={{ color: "inherit", textDecoration: "none" }}>
+                  {t.nav.fans}
+                </a>
               </div>
 
               <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
@@ -352,23 +500,33 @@ export default function TeddyAfroEtorikaSite() {
               {t.heroBadge}
             </span>
 
-            <h2 style={{ margin: "18px 0 0", fontSize: "56px", lineHeight: 1.05 }}>{t.title}</h2>
+            <h2 style={{ margin: "18px 0 0", fontSize: "56px", lineHeight: 1.05 }}>
+              {t.title}
+            </h2>
 
-           <p
-  style={{
-    marginTop: "12px",
-    fontSize: "28px",
-    fontWeight: "700",
-    color: "#f4c542",
-    maxWidth: "700px",
-  }}
->
-  የማዳም ቅመሞች አንደኛ !
-</p>
+            <p
+              style={{
+                marginTop: "12px",
+                fontSize: "28px",
+                fontWeight: "700",
+                color: "#f4c542",
+                maxWidth: "700px",
+              }}
+            >
+              የማዳም ቅመሞች አንደኛ !
+            </p>
 
-<p style={{ marginTop: "18px", fontSize: "18px", lineHeight: 1.7, color: "rgba(255,255,255,0.82)", maxWidth: "700px" }}>
-  {t.subtitle}
-</p>
+            <p
+              style={{
+                marginTop: "18px",
+                fontSize: "18px",
+                lineHeight: 1.7,
+                color: "rgba(255,255,255,0.82)",
+                maxWidth: "700px",
+              }}
+            >
+              {t.subtitle}
+            </p>
 
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginTop: "26px" }}>
               <a
@@ -403,7 +561,13 @@ export default function TeddyAfroEtorikaSite() {
             </div>
           </div>
 
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))", gap: "16px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(180px, 1fr))",
+              gap: "16px",
+            }}
+          >
             {tracks.slice(0, 4).map((track) => (
               <a
                 key={track.title}
@@ -419,10 +583,22 @@ export default function TeddyAfroEtorikaSite() {
                   color: "#fff",
                 }}
               >
-                <img src={track.image} alt={track.title} style={{ width: "100%", height: "170px", objectFit: "cover" }} />
+                <img
+                  src={track.image}
+                  alt={track.title}
+                  style={{ width: "100%", height: "170px", objectFit: "cover" }}
+                />
                 <div style={{ padding: "14px" }}>
                   <h3 style={{ margin: 0, fontSize: "18px" }}>{track.title}</h3>
-                  <p style={{ margin: "6px 0 0", fontSize: "13px", color: "rgba(255,255,255,0.72)" }}>{track.subtitle}</p>
+                  <p
+                    style={{
+                      margin: "6px 0 0",
+                      fontSize: "13px",
+                      color: "rgba(255,255,255,0.72)",
+                    }}
+                  >
+                    {track.subtitle}
+                  </p>
                 </div>
               </a>
             ))}
@@ -431,10 +607,25 @@ export default function TeddyAfroEtorikaSite() {
       </div>
 
       <main style={{ maxWidth: "1200px", margin: "0 auto", padding: "48px 16px 80px" }}>
-        <section style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px" }}>
-          <div style={{ padding: "28px", borderRadius: "28px", border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.05)" }}>
+        <section
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "20px",
+          }}
+        >
+          <div
+            style={{
+              padding: "28px",
+              borderRadius: "28px",
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(255,255,255,0.05)",
+            }}
+          >
             <h3 style={{ margin: 0, fontSize: "30px" }}>{t.overviewTitle}</h3>
-            <p style={{ marginTop: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.82)" }}>{t.overviewText}</p>
+            <p style={{ marginTop: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.82)" }}>
+              {t.overviewText}
+            </p>
           </div>
 
           <div
@@ -464,13 +655,37 @@ export default function TeddyAfroEtorikaSite() {
           </div>
         </section>
 
-        <section id="story" style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: "20px", marginTop: "32px" }}>
-          <div style={{ padding: "28px", borderRadius: "28px", border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.05)" }}>
+        <section
+          id="story"
+          style={{
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "20px",
+            marginTop: "32px",
+          }}
+        >
+          <div
+            style={{
+              padding: "28px",
+              borderRadius: "28px",
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(255,255,255,0.05)",
+            }}
+          >
             <h3 style={{ margin: 0, fontSize: "34px" }}>{t.storyTitle}</h3>
-            <p style={{ marginTop: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.82)" }}>{t.storyText}</p>
+            <p style={{ marginTop: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.82)" }}>
+              {t.storyText}
+            </p>
           </div>
 
-          <div style={{ padding: "28px", borderRadius: "28px", border: "1px solid rgba(255,255,255,0.12)", background: "rgba(255,255,255,0.05)" }}>
+          <div
+            style={{
+              padding: "28px",
+              borderRadius: "28px",
+              border: "1px solid rgba(255,255,255,0.12)",
+              background: "rgba(255,255,255,0.05)",
+            }}
+          >
             <h3 style={{ margin: 0, fontSize: "28px" }}>{t.themeTitle}</h3>
             <div style={{ display: "grid", gap: "10px", marginTop: "18px" }}>
               {t.themes.map((theme) => (
@@ -492,7 +707,14 @@ export default function TeddyAfroEtorikaSite() {
 
         <section id="songs" style={{ marginTop: "42px" }}>
           <h3 style={{ margin: 0, fontSize: "34px" }}>{t.songsTitle}</h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "20px", marginTop: "22px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+              gap: "20px",
+              marginTop: "22px",
+            }}
+          >
             {tracks.map((track, index) => (
               <article
                 key={track.title}
@@ -503,7 +725,11 @@ export default function TeddyAfroEtorikaSite() {
                   background: "rgba(255,255,255,0.05)",
                 }}
               >
-                <img src={track.image} alt={track.title} style={{ width: "100%", height: "220px", objectFit: "cover" }} />
+                <img
+                  src={track.image}
+                  alt={track.title}
+                  style={{ width: "100%", height: "220px", objectFit: "cover" }}
+                />
                 <div style={{ padding: "18px" }}>
                   <div
                     style={{
@@ -518,7 +744,15 @@ export default function TeddyAfroEtorikaSite() {
                     0{index + 1}
                   </div>
                   <h4 style={{ margin: "12px 0 0", fontSize: "22px" }}>{track.title}</h4>
-                  <p style={{ marginTop: "8px", fontSize: "14px", color: "rgba(255,255,255,0.72)" }}>{track.subtitle}</p>
+                  <p
+                    style={{
+                      marginTop: "8px",
+                      fontSize: "14px",
+                      color: "rgba(255,255,255,0.72)",
+                    }}
+                  >
+                    {track.subtitle}
+                  </p>
                   <a
                     href={track.link}
                     target="_blank"
@@ -554,7 +788,14 @@ export default function TeddyAfroEtorikaSite() {
         >
           <h3 style={{ margin: 0, fontSize: "34px" }}>{t.rankingsTitle}</h3>
 
-          <div style={{ marginTop: "20px", overflowX: "auto", borderRadius: "22px", border: "1px solid rgba(255,255,255,0.10)" }}>
+          <div
+            style={{
+              marginTop: "20px",
+              overflowX: "auto",
+              borderRadius: "22px",
+              border: "1px solid rgba(255,255,255,0.10)",
+            }}
+          >
             <table style={{ width: "100%", borderCollapse: "collapse", minWidth: "700px" }}>
               <thead style={{ background: "rgba(255,255,255,0.10)" }}>
                 <tr>
@@ -580,7 +821,14 @@ export default function TeddyAfroEtorikaSite() {
 
         <section id="gallery" style={{ marginTop: "42px" }}>
           <h3 style={{ margin: 0, fontSize: "34px" }}>{t.galleryTitle}</h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "16px", marginTop: "20px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+              gap: "16px",
+              marginTop: "20px",
+            }}
+          >
             {gallery.map((src, index) => (
               <div
                 key={src + index}
@@ -591,7 +839,11 @@ export default function TeddyAfroEtorikaSite() {
                   background: "rgba(255,255,255,0.05)",
                 }}
               >
-                <img src={src} alt={`Gallery ${index + 1}`} style={{ width: "100%", height: "220px", objectFit: "cover" }} />
+                <img
+                  src={src}
+                  alt={`Gallery ${index + 1}`}
+                  style={{ width: "100%", height: "220px", objectFit: "cover" }}
+                />
               </div>
             ))}
           </div>
@@ -608,7 +860,14 @@ export default function TeddyAfroEtorikaSite() {
           }}
         >
           <h3 style={{ margin: 0, fontSize: "34px" }}>{t.fansTitle}</h3>
-          <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))", gap: "16px", marginTop: "20px" }}>
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
+              gap: "16px",
+              marginTop: "20px",
+            }}
+          >
             {fanComments[lang].map((comment, index) => (
               <div
                 key={index}
@@ -620,7 +879,9 @@ export default function TeddyAfroEtorikaSite() {
                 }}
               >
                 <div style={{ marginBottom: "10px", fontSize: "20px" }}>❤️💚💛</div>
-                <p style={{ margin: 0, lineHeight: 1.8, color: "rgba(255,255,255,0.85)" }}>{comment}</p>
+                <p style={{ margin: 0, lineHeight: 1.8, color: "rgba(255,255,255,0.85)" }}>
+                  {comment}
+                </p>
               </div>
             ))}
           </div>
@@ -628,7 +889,15 @@ export default function TeddyAfroEtorikaSite() {
       </main>
 
       <footer style={{ borderTop: "1px solid rgba(255,255,255,0.10)", background: "rgba(0,0,0,0.3)" }}>
-        <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "28px 16px", fontSize: "14px", color: "rgba(255,255,255,0.60)" }}>
+        <div
+          style={{
+            maxWidth: "1200px",
+            margin: "0 auto",
+            padding: "28px 16px",
+            fontSize: "14px",
+            color: "rgba(255,255,255,0.60)",
+          }}
+        >
           <p style={{ margin: 0 }}>{t.footer}</p>
           <p style={{ margin: "10px 0 0" }}>
             Photos are loaded from public online thumbnails and the links point to Teddy Afro YouTube releases.
