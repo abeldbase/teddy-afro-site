@@ -354,21 +354,21 @@ export default function TeddyAfroEtorikaSite() {
 
             <h2 style={{ margin: "18px 0 0", fontSize: "56px", lineHeight: 1.05 }}>{t.title}</h2>
 
-            <p
-              style={{
-                marginTop: "12px",
-                fontSize: "28px",
-                fontWeight: "700",
-                color: "#f4c542",
-                maxWidth: "700px",
-              }}
-            >
-              የማዳም ቅመሞች አንደኛ !
-            </p>
+           <p
+  style={{
+    marginTop: "12px",
+    fontSize: "28px",
+    fontWeight: "700",
+    color: "#f4c542",
+    maxWidth: "700px",
+  }}
+>
+  የማዳም ቅመሞች አንደኛ !
+</p>
 
-            <p style={{ marginTop: "18px", fontSize: "18px", lineHeight: 1.7, color: "rgba(255,255,255,0.82)", maxWidth: "700px" }}>
-              {t.subtitle}
-            </p>
+<p style={{ marginTop: "18px", fontSize: "18px", lineHeight: 1.7, color: "rgba(255,255,255,0.82)", maxWidth: "700px" }}>
+  {t.subtitle}
+</p>
 
             <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", marginTop: "26px" }}>
               <a
