@@ -204,7 +204,8 @@ export default function TeddyAfroEtorikaSite() {
       },
       heroBadge: "New Album",
       title: "Etorika",
-      subtitle: "A multilingual fan page about Teddy Afro's new album.",
+      subtitle:
+        "A multilingual fan page about Teddy Afro's new album.",
       ctaPrimary: "View songs",
       ctaSecondary: "Go to YouTube",
       overviewTitle: "What is this album about?",
@@ -330,14 +331,16 @@ export default function TeddyAfroEtorikaSite() {
 
   const [lang, setLang] = useState("am");
   const [rankingRows, setRankingRows] = useState(defaultRankingRows);
-  const t = languages[lang];
+  const t = languages[lang] || languages.am;
+  const commentsForLanguage = fanComments[lang] || fanComments.am;
 
   useEffect(() => {
+    const basePath = (import.meta.env.BASE_URL || "/").replace(/\/$/, "");
+    const rankingUrl = `${basePath}/rankings.json`;
+
     const loadRankings = async () => {
       try {
-        const response = await fetch("/teddy-afro-site/rankings.json", {
-          cache: "no-store",
-        });
+        const response = await fetch(rankingUrl, { cache: "no-store" });
         if (!response.ok) return;
         const data = await response.json();
         if (Array.isArray(data) && data.length > 0) {
@@ -372,8 +375,8 @@ export default function TeddyAfroEtorikaSite() {
             height: "100%",
             objectFit: "cover",
             objectPosition: "left center",
-            opacity: 0.62,
-            filter: "contrast(1.05) brightness(0.92)",
+            opacity: 0.7,
+            filter: "contrast(1.08) brightness(0.96)",
           }}
         />
         <div
@@ -381,7 +384,7 @@ export default function TeddyAfroEtorikaSite() {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(90deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.28) 28%, rgba(0,0,0,0.45) 52%, rgba(0,0,0,0.62) 100%), linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.28), #0a0a0a)",
+              "linear-gradient(90deg, rgba(0,0,0,0.12) 0%, rgba(0,0,0,0.18) 24%, rgba(0,0,0,0.32) 50%, rgba(0,0,0,0.56) 100%), linear-gradient(to bottom, rgba(0,0,0,0.06), rgba(0,0,0,0.18), rgba(0,0,0,0.78))",
           }}
         />
 
@@ -869,7 +872,7 @@ export default function TeddyAfroEtorikaSite() {
               marginTop: "20px",
             }}
           >
-            {fanComments[lang].map((comment, index) => (
+            {commentsForLanguage.map((comment, index) => (
               <div
                 key={index}
                 style={{
