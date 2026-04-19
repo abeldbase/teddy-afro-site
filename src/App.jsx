@@ -353,6 +353,19 @@ export default function TeddyAfroEtorikaSite() {
             </span>
 
             <h2 style={{ margin: "18px 0 0", fontSize: "56px", lineHeight: 1.05 }}>{t.title}</h2>
+
+            <p
+              style={{
+                marginTop: "12px",
+                fontSize: "28px",
+                fontWeight: "700",
+                color: "#f4c542",
+                maxWidth: "700px",
+              }}
+            >
+              የማዳም ቅመሞች አንደኛ !
+            </p>
+
             <p style={{ marginTop: "18px", fontSize: "18px", lineHeight: 1.7, color: "rgba(255,255,255,0.82)", maxWidth: "700px" }}>
               {t.subtitle}
             </p>
@@ -619,6 +632,9 @@ export default function TeddyAfroEtorikaSite() {
           <p style={{ margin: 0 }}>{t.footer}</p>
           <p style={{ margin: "10px 0 0" }}>
             Photos are loaded from public online thumbnails and the links point to Teddy Afro YouTube releases.
+          </p>
+          <p style={{ margin: "10px 0 0", color: "#f4c542", fontWeight: 700 }}>
+            Created by Abel Sharon
           </p>
         </div>
       </footer>
