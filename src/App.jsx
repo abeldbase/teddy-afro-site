@@ -193,42 +193,42 @@ export default function TeddyAfroEtorikaSite() {
       footer: "Fanootah fan takkeh tijaabo website",
     },
     nu: {
-      name: "Nuer",
+      name: "Nuär",
       dir: "ltr",
       nav: {
-        story: "Album story",
-        songs: "Songs",
-        rankings: "Country rankings",
-        gallery: "Gallery",
-        fans: "Fan comments",
+        story: "Albäm ruac",
+        songs: "Diit",
+        rankings: "Wi̱i̱c rankiŋni̱",
+        gallery: "Galli̱ri̱",
+        fans: "Ruac tin nhɔakɛ",
       },
-      heroBadge: "New Album",
-      title: "Etorika",
+      heroBadge: "Albäm mi̱ Ji̱di̱t",
+      title: "Ɛtörika",
       subtitle:
-        "A multilingual fan page about Teddy Afro's new album.",
-      ctaPrimary: "View songs",
-      ctaSecondary: "Go to YouTube",
-      overviewTitle: "What is this album about?",
+        "Ɛn nɛy tin laa guɛckɛ thuk ti̱ ŋuan kɛ kui̱i̱ albämä Teddy Afro in pay bën.",
+      ctaPrimary: "Guɛc diitni̱",
+      ctaSecondary: "Wër kä Yutub",
+      overviewTitle: "Ɛŋu mi̱ lot rɔ kɛ albäm ɛmɛ?",
       overviewText:
-        "This page presents Etorika in multiple languages, including Nuer. It highlights music, culture, love, spirituality, and Ethiopian identity.",
-      storyTitle: "Album story",
+        "Pec ɛmɛ nyothɛ Etorika kɛ thuk ti ŋuan, amäni Nuer. Nyuɔthɛ buɔ̱l, ciɛŋ, nhök, yiëë, kɛnɛ ciɛŋ ji̱ Ethiopia.",
+      storyTitle: "Albäm ruac",
       storyText:
-        "Etorika feels bigger than music alone. This page presents the album as culture, message, and spiritual journey.",
-      themeTitle: "Main themes",
-      themes: ["Music and culture", "Love and memory", "Spirituality", "Ethiopian identity"],
-      statTitle: "Quick view",
-      stats: ["6 language page", "Online photo gallery", "YouTube links", "Country rankings section"],
-      songsTitle: "Fan picks",
-      rankingsTitle: "Top country rankings",
-      country: "Country",
-      song: "Song",
-      peak: "Peak rank",
+        "Etorika laa jɛ laa guicɛ i̱ di̱tdɛ ɛlɔ̱ŋ mi̱ leny ni̱ buɔ̱l kärɔa. Ɛn wargak ɛmɛ nyoothɛ ni̱ albäm ɛ la ka̱lcɛr, ruac, kɛnɛ ja̱l yieekä.",
+      themeTitle: "Ci̱öt tin di̱t",
+      themes: ["Muthik kɛnɛ ka̱lciɛr", "Nhök kɛnɛ ti̱m ŋɔaani̱", "Yiëë", "Ŋäc ji̱ I̱thi̱öpia"],
+      statTitle: "Guäc mi̱ pɛ̈th",
+      stats: ["Pec thuɔkni̱ da̱ŋ 6", "Gua̱a̱th thurɛni̱ tin te rɛy intɛrnɛtdä", "Linkni̱ Youtube", "Gua̱a̱th in ca la̱th thi̱n rɛy wec"],
+      songsTitle: "Pan pi̱kni̱",
+      rankingsTitle: "Wi̱i̱c tin te nhial",
+      country: "Weec",
+      song: "Diit",
+      peak: "Pi̱i̱k rank",
       notes: "Notes",
-      galleryTitle: "Gallery",
-      fansTitle: "Fan comments",
-      listen: "Watch",
-      langLabel: "Language",
-      footer: "Fan-made test website",
+      galleryTitle: "Galli̱ri̱",
+      fansTitle: "Ruacni̱ ji̱ nhɔakɛ",
+      listen: "Guɛc",
+      langLabel: "Thok",
+      footer: "Pan-made thëm wɛbthaay",
     },
   };
 
@@ -323,9 +323,9 @@ export default function TeddyAfroEtorikaSite() {
       "Shan afat qembisamuk baaxo cakkik.",
     ],
     nu: [
-      "This album feels like more than music.",
-      "It carries culture, spirit, and memory.",
-      "Adding Nuer makes the page more inclusive.",
+      "Albäm ɛmɛ jɛ laa jɛ buɔ̱l kuɔth kɛrɛc.",
+      "Ɛn cɛ yiëë, ciɛŋ, kɛnɛ ti̱m ŋɔaani̱.",
+      "Thok Nuer kɛɛrɛ laa pany luɔi̱.",
     ],
   };
 
@@ -676,7 +676,7 @@ export default function TeddyAfroEtorikaSite() {
               background: "rgba(255,255,255,0.05)",
             }}
           >
-            <h3 style={{ margin: 0, fontSize: "34px" }}>{t.storyTitle}</h3>
+            <h3 style={{ margin: 0, fontSize: "34px" }}>{t.nav.story}</h3>
             <p style={{ marginTop: "16px", lineHeight: 1.9, color: "rgba(255,255,255,0.82)" }}>
               {t.storyText}
             </p>
