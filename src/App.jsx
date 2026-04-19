@@ -204,8 +204,7 @@ export default function TeddyAfroEtorikaSite() {
       },
       heroBadge: "New Album",
       title: "Etorika",
-      subtitle:
-        "A multilingual fan page about Teddy Afro's new album.",
+      subtitle: "A multilingual fan page about Teddy Afro's new album.",
       ctaPrimary: "View songs",
       ctaSecondary: "Go to YouTube",
       overviewTitle: "What is this album about?",
@@ -372,7 +371,7 @@ export default function TeddyAfroEtorikaSite() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            opacity: 0.28,
+            opacity: 0.5,
           }}
         />
         <div
@@ -380,7 +379,7 @@ export default function TeddyAfroEtorikaSite() {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0,0.8), #0a0a0a)",
+              "linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.55), #0a0a0a)",
           }}
         />
 
