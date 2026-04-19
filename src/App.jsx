@@ -371,7 +371,9 @@ export default function TeddyAfroEtorikaSite() {
             width: "100%",
             height: "100%",
             objectFit: "cover",
-            opacity: 0.5,
+            objectPosition: "left center",
+            opacity: 0.62,
+            filter: "contrast(1.05) brightness(0.92)",
           }}
         />
         <div
@@ -379,7 +381,7 @@ export default function TeddyAfroEtorikaSite() {
             position: "absolute",
             inset: 0,
             background:
-              "linear-gradient(to bottom, rgba(0,0,0,0.35), rgba(0,0,0,0.55), #0a0a0a)",
+              "linear-gradient(90deg, rgba(0,0,0,0.18) 0%, rgba(0,0,0,0.28) 28%, rgba(0,0,0,0.45) 52%, rgba(0,0,0,0.62) 100%), linear-gradient(to bottom, rgba(0,0,0,0.10), rgba(0,0,0,0.28), #0a0a0a)",
           }}
         />
 
