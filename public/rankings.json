@@ -1,12 +1,10 @@
 [
-  ["UAE", "ዳስ ጣል (አንሳው)", "#1", "Peak chart position"],
-  ["Saudi Arabia", "ዳስ ጣል (አንሳው)", "#1", "Peak chart position"],
-  ["Lebanon", "መሬማ", "#2", "Strong regional peak"],
-  ["Canada", "ስምምነን", "#5", "Verified charting"],
-  ["Australia", "ዳስ ጣል (አንሳው)", "#7", "High trending position"],
-  ["United Kingdom", "ስምምነን", "#7", "Strong cross-market visibility"],
-  ["United States", "ስምምነን", "#13", "Verified charting"],
-  ["Germany", "መሬማ / ስምምነን", "#18", "Shared visibility"],
-  ["Jordan", "ጀምበር", "#22", "Verified charting"],
-  ["Finland", "ጀምበር", "#28", "Verified charting"]
+  ["United States", "ዳስ ጣል (አንሳው)", "#5", "Verified today from YouTube Charts"],
+  ["United Arab Emirates", "ዳስ ጣል (አንሳው)", "#1", "Verified today"],
+  ["Israel", "ዳስ ጣል (አንሳው)", "#1", "Shown on worldwide trending today"],
+  ["Saudi Arabia", "ዳስ ጣል (አንሳው)", "#4", "Shown on worldwide trending today"],
+  ["South Africa", "ዳስ ጣል (አንሳው)", "#7", "Shown on worldwide trending today"],
+  ["Worldwide Music Trending", "ዳስ ጣል (አንሳው)", "#18", "Verified today"],
+  ["Qatar", "መሬማ", "Charting", "Verified today"],
+  ["Canada", "ስምምነን", "Charting", "Needs exact rank reconfirmed before display"]
 ]
